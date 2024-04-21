@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="display-4">Animals</h1>
+
+<div id="animals">
+<table class="table">
+  <thead>
+    <th>Animal</th>
+    <th>More...</th>
+  </thead>
+  <% @animals.each do |animal| %>
+    <tr> 
+      <td> <%= animal.name %> </td>
+      <td> <%= link_to "Show this animal", animal %> </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%= link_to "New animal", new_animal_path, class: "btn btn-success" %>

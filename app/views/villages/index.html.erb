@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="display-4">Villages</h1>
+
+<div id="villages">
+  <table class="table">
+    <thead>
+      <th>Village</th>
+      <th>More...</th>
+    </thead>
+  <% @villages.each do |village| %>
+      <tr>
+        <td> <%= render village %> </td>
+        <td> <%= link_to "Show this village", village %> </td>
+      </tr>
+  <% end %>
+  </table>
+</div>
+
+<%= link_to "New village", new_village_path, class: "btn btn-success" %>

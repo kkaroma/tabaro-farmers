@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  field_name: MyString
+  crop: one
+  acres: 1
+  number_of_trees: 1
+  date_planted: 2024-04-20
+  estimated_yield: 2024-04-20
+  last_chemical: MyString
+  organic: false
+
+two:
+  field_name: MyString
+  crop: two
+  acres: 1
+  number_of_trees: 1
+  date_planted: 2024-04-20
+  estimated_yield: 2024-04-20
+  last_chemical: MyString
+  organic: false

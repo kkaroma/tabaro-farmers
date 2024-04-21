@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @parish %>
+
+<div>
+  <%= link_to "Edit this parish", edit_parish_path(@parish) %> |
+  <%= link_to "Back to parishes", parishes_path %>
+
+  <%= button_to "Destroy this parish", @parish, method: :delete %>
+</div>

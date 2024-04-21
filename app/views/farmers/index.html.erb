@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="display-4">Farmers</h1>
+
+<div id="farmers">
+<table class="table">
+<thead>
+  <tr>
+    <th>Farmer name</th>
+    <th>Code</th>
+    <th>NIDA</th>
+    <th>Village</th>
+    <th>Parish</th>
+    <th>Phone</th>
+    <th>More...</th>
+  </tr>
+
+  <% @farmers.each do |farmer| %>
+  <tr>   
+    <td><%= farmer.name %>
+    <td><%= farmer.code %>
+    <td><%= farmer.nida %>
+    <td><%= farmer.village.name %>
+    <td><%= farmer.parish.name %>
+    <td><%= farmer.phone %>
+    <td> <%= link_to "Show this farmer", farmer %> </td>
+  </tr>
+  
+  <% end %>
+  </table>
+</div>
+
+<%= link_to "New farmer", new_farmer_path, class: "btn btn-success" %>

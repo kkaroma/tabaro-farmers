@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="display-4">Permanent crops</h1>
+
+<div id="permanent_crops">
+  <table class="table">
+    <thead>
+      <th>Field Name</th>
+      <th>Crops</th>
+      <th>Acres</th>
+      <th>Number of trees</th>
+      <th>Date Planted</th>
+      <th>Estimated Yield</th>
+      <th>Last Chemicals used</th>
+      <th>Organic </th>
+      <th>More...</th>
+    </thead>
+  <% @permanent_crops.each do |permanent_crop| %>
+     <td> <%= permanent_crop.field_name %> </td>
+      <td><%= permanent_crop.crop.name %></td>
+      <td><%= permanent_crop.acres %></td>
+      <td> <%= permanent_crop.number_of_trees %> </td>
+      <td><%= permanent_crop.date_planted %></td>
+      <td><%= permanent_crop.estimated_yield %></td>
+      <td><%= permanent_crop.last_chemical %></td>
+      <td><%= permanent_crop.organic %></td>
+      <td><%= link_to "Show this permanent crop", permanent_crop %> </td>
+    </p>
+  <% end %>
+    <%= link_to "New permanent crop", new_permanent_crop_path %>
+</div>
+
+

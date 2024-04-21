@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @permanent_crop %>
+
+<div>
+  <%= link_to "Edit this permanent crop", edit_permanent_crop_path(@permanent_crop) %> |
+  <%= link_to "Back to permanent crops", permanent_crops_path %>
+
+  <%= button_to "Destroy this permanent crop", @permanent_crop, method: :delete %>
+</div>

@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="display-4">Animal types</h1>
+
+<div id="animal_types">
+<table class="table">
+<thead>
+  <tr>
+    <th>Animal Type</th>
+    <th>More...</th>
+  </tr>
+  <% @animal_types.each do |animal_type| %>
+     <tr>   
+    <td><%= animal_type.animal_type %></td>
+    <td>
+      <%= link_to "Show this animal type", animal_type %>
+    </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%= link_to "New animal type", new_animal_type_path %>
