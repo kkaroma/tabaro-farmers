@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_20_162731) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_28_084057) do
   create_table "animal_types", force: :cascade do |t|
     t.string "animal_type"
     t.datetime "created_at", null: false
@@ -38,6 +38,30 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_20_162731) do
     t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "field_name"
+    t.integer "crop"
+    t.integer "acre"
+    t.integer "tree"
+    t.date "date_planted"
+    t.integer "est_yield"
+    t.string "last_used_chemical"
+    t.boolean "organic"
+    t.string "field_name2"
+    t.integer "crop2"
+    t.integer "acre2"
+    t.integer "tree2"
+    t.date "date_planted2"
+    t.integer "est_yield2"
+    t.string "last_used_chemical2"
+    t.boolean "organic2"
+    t.string "field_name3"
+    t.integer "crop3"
+    t.integer "acre3"
+    t.integer "tree3"
+    t.date "date_planted3"
+    t.integer "est_yield3"
+    t.string "last_used_chemical3"
+    t.boolean "organic3"
     t.index ["parish_id"], name: "index_farmers_on_parish_id"
     t.index ["village_id"], name: "index_farmers_on_village_id"
   end

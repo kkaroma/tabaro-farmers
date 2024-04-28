@@ -65,6 +65,6 @@ class FarmersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def farmer_params
-      params.require(:farmer).permit(:name, :code, :nida, :village_id, :parish_id, :phone)
+      params.require(:farmer).permit(:name, :code, :nida, :village_id, :parish_id, :phone, :field_name, :crop, :acre. :tree, :date_planted, :est_yield, :last_chemical, :organic, :field_name2, :crop2, :acre2, :tree2, :date_planted2, :est_yield2, :last_used_chemical2, :organic2, :field_name3, :crop3, :acre3, :tree3, :date_planted3, :est_yield3, :last_used_chemical3, :organic3)
     end
 end
