@@ -3,7 +3,7 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-group">
+    <div class="form-group">
       <%= f.input :name, input_html: { class: 'form-control' }, label: "Name" %>
     </div>
 
@@ -26,12 +26,177 @@
     <div class="form-group">
       <%= f.input :phone, input_html: { class: 'form-control' }, label: "Phone" %>
     </div>
+<%# Begin Permanent Crops %>
+<h3 class="display-6 mt-3">Permanent Crops</h3>
+<div class="row">
+  <div class="col-md-4">
+     <div class="form-group">
+      <%= f.input :field_name, input_html: { class: 'form-control' }, label: "Field Name" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :crop, input_html: { class: 'form-control' }, label: "Crop" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :acre, input_html: { class: 'form-control' }, label: "Acres" %>
+    </div>
+  </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :tree, input_html: { class: 'form-control' }, label: "Trees" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <%= f.input :date_planted, input_html: { class: 'form-control' }, label: "Date Planted" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :est_yield, input_html: { class: 'form-control' }, label: "Estimated Yield" %>
+    </div>
+    </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :last_used_chemical, input_html: { class: 'form-control' }, label: "Last Used Chemicals" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :organic, input_html: { class: 'form-control' }, label: "Organic" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+
+    </div>
+  </div><%# End row %>
+
+<%# End parmanent Crops %>
 
 
 
+<%# Begin Permanent Crops %>
+<hr />
+<div class="row">
+  <div class="col-md-4">
+     <div class="form-group">
+      <%= f.input :field_name2, input_html: { class: 'form-control' }, label: "Field Name" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :crop2, input_html: { class: 'form-control' }, label: "Crop" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :acre2, input_html: { class: 'form-control' }, label: "Acres" %>
+    </div>
+  </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :tree2, input_html: { class: 'form-control' }, label: "Trees" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <%= f.input :date_planted2, input_html: { class: 'form-control' }, label: "Date Planted" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :est_yield2, input_html: { class: 'form-control' }, label: "Estimated Yield" %>
+    </div>
+    </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :last_used_chemical2, input_html: { class: 'form-control' }, label: "Last Used Chemicals" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :organic2, input_html: { class: 'form-control' }, label: "Organic" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+
+    </div>
+  </div><%# End row %>
+
+<%# End parmanent Crops %>
 
 
+<%# Begin Permanent Crops %>
+<hr />
 
+<div class="row">
+  <div class="col-md-4">
+     <div class="form-group">
+      <%= f.input :field_name3, input_html: { class: 'form-control' }, label: "Field Name" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :crop3, input_html: { class: 'form-control' }, label: "Crop" %>
+    </div>
+  </div>
+   <div class="col-md-4">
+    <div class="form-group">
+      <%= f.input :acre3, input_html: { class: 'form-control' }, label: "Acres" %>
+    </div>
+  </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :tree3, input_html: { class: 'form-control' }, label: "Trees" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+      <%= f.input :date_planted3, input_html: { class: 'form-control' }, label: "Date Planted" %>
+    </div>
+    </div>
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :est_yield3, input_html: { class: 'form-control' }, label: "Estimated Yield" %>
+    </div>
+    </div>
+  </div><%# End row %>
+
+  <div class="row">
+    <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :last_used_chemical3, input_html: { class: 'form-control' }, label: "Last Used Chemicals" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+       <div class="form-group">
+      <%= f.input :organic3, input_html: { class: 'form-control' }, label: "Organic" %>
+    </div>
+    </div>
+     <div class="col-md-4">
+
+    </div>
+  </div><%# End row %>
+
+<%# End parmanent Crops %>
 
 
 
