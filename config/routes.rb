@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :annual_crops
   resources :permanent_crops
   resources :farmers
   resources :animals

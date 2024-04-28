@@ -1,0 +1,20 @@
+
+<%= simple_form_for(@annual_crop) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :annual_crop_field %>
+    <%= f.input :anual_crop_acre %>
+    <%= f.input :annual_crop_this_year %>
+    <%= f.input :annual_crop_organic %>
+    <%= f.input :annual_crop_last_year %>
+    <%= f.input :annual_crop_last_year_organic %>
+    <%= f.input :annual_crop_two_years_ago %>
+    <%= f.input :annual_crop_two_years_ago_organic %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

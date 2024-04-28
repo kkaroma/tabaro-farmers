@@ -3,29 +3,43 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-    <div class="form-group">
-      <%= f.input :name, input_html: { class: 'form-control' }, label: "Name" %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.input :name, input_html: { class: 'form-control' }, label: "Name" %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :code, input_html: { class: 'form-control' }, label: "Code" %>
+      </div>
     </div>
 
-    <div class="form-group">
-      <%= f.input :code, input_html: { class: 'form-control' }, label: "Code" %>
-    </div>
-
+  <div class="col-md-3">
     <div class="form-group">
       <%= f.input :nida, input_html: { class: 'form-control' }, label: "NIDA" %>
     </div>
+  </div>
 
-    <div class="form-group">
-      <%= f.association :village, input_html: { class: 'form-control' }, label: "Village" %>
+  </div> <!-- End row -->
+  <div class="row">
+     <div class="col-md-6">
+      <div class="form-group">
+        <%= f.association :village, input_html: { class: 'form-control' }, label: "Village" %>
+      </div>
     </div>
 
+     <div class="col-md-3">
     <div class="form-group">
       <%= f.association :parish, input_html: { class: 'form-control' }, label: "Parish" %>
     </div>
-
-    <div class="form-group">
-      <%= f.input :phone, input_html: { class: 'form-control' }, label: "Phone" %>
     </div>
+     <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :phone, input_html: { class: 'form-control' }, label: "Phone" %>
+      </div>
+    </div>
+  </div><!-- End Row -->
 <%# Begin Permanent Crops %>
 <h3 class="display-6 mt-3">Permanent Crops</h3>
 <div class="row">
@@ -197,6 +211,141 @@
   </div><%# End row %>
 
 <%# End parmanent Crops %>
+
+<h3>Annual Crops</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_field, input_html: { class: 'form-control' }, label: "Field Name"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :anual_crop_acre, input_html: { class: 'form-control' }, label: "Acres"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_this_year, input_html: { class: 'form-control' }, label: "Crops of this year"  %>
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_organic, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year, input_html: { class: 'form-control' }, label: "Crops Last Year"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year_organic, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago, input_html: { class: 'form-control' }, label: "Crops 2 Year Ago"  %>
+    </div>
+    </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago_organic, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  </div>
+
+<hr />
+  
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_field2, input_html: { class: 'form-control' }, label: "Field Name"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :anual_crop_acre2, input_html: { class: 'form-control' }, label: "Acres"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_this_year2, input_html: { class: 'form-control' }, label: "Crops of this year"  %>
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_organic2, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year2, input_html: { class: 'form-control' }, label: "Crops Last Year"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year_organic2, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago2, input_html: { class: 'form-control' }, label: "Crops 2 Year Ago"  %>
+    </div>
+    </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago_organic2, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  </div>
+
+<hr />
+  
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_field3, input_html: { class: 'form-control' }, label: "Field Name"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :anual_crop_acre3, input_html: { class: 'form-control' }, label: "Acres"  %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= f.input :annual_crop_this_year3, input_html: { class: 'form-control' }, label: "Crops of this year"  %>
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_organic3, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year3, input_html: { class: 'form-control' }, label: "Crops Last Year"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_last_year_organic3, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago3, input_html: { class: 'form-control' }, label: "Crops 2 Year Ago"  %>
+    </div>
+    </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <%= f.input :annual_crop_two_years_ago_organic3, input_html: { class: 'form-control' }, label: "Organic"  %>
+    </div>
+  </div>
+  </div>
+  
 
 
 

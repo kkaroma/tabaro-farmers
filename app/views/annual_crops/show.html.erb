@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @annual_crop %>
+
+<div>
+  <%= link_to "Edit this annual crop", edit_annual_crop_path(@annual_crop) %> |
+  <%= link_to "Back to annual crops", annual_crops_path %>
+
+  <%= button_to "Destroy this annual crop", @annual_crop, method: :delete %>
+</div>

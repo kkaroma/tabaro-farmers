@@ -1,0 +1,2 @@
+class AnnualCrop < ApplicationRecord
+end

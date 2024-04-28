@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  annual_crop_field: MyString
+  anual_crop_acre: 1
+  annual_crop_this_year: MyString
+  annual_crop_organic: MyString
+  annual_crop_last_year: MyString
+  annual_crop_last_year_organic: false
+  annual_crop_two_years_ago: MyString
+  annual_crop_two_years_ago_organic: MyString
+
+two:
+  annual_crop_field: MyString
+  anual_crop_acre: 1
+  annual_crop_this_year: MyString
+  annual_crop_organic: MyString
+  annual_crop_last_year: MyString
+  annual_crop_last_year_organic: false
+  annual_crop_two_years_ago: MyString
+  annual_crop_two_years_ago_organic: MyString

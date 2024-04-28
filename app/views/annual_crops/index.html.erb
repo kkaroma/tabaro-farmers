@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Annual crops</h1>
+
+<div id="annual_crops">
+  <% @annual_crops.each do |annual_crop| %>
+    <%= render annual_crop %>
+    <p>
+      <%= link_to "Show this annual crop", annual_crop %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New annual crop", new_annual_crop_path %>
