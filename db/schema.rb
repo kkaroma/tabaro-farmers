@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_28_110738) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_01_064113) do
   create_table "animal_types", force: :cascade do |t|
     t.string "animal_type"
     t.datetime "created_at", null: false
@@ -115,6 +115,22 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_28_110738) do
     t.boolean "annual_crop_last_year_organic3"
     t.string "annual_crop_two_years_ago3"
     t.boolean "annual_crop_two_years_ago_organic3"
+    t.integer "animal"
+    t.integer "animal_total"
+    t.boolean "animal_organic"
+    t.text "animal_comment"
+    t.integer "animal2"
+    t.integer "animal_total2"
+    t.boolean "animal_organic2"
+    t.text "animal_comment2"
+    t.integer "animal_animal3"
+    t.integer "animal_total3"
+    t.boolean "animal_organic3"
+    t.text "animal_comment3"
+    t.integer "animal_animal4"
+    t.integer "animal_total4"
+    t.boolean "animal_organic4"
+    t.text "animal_comment4"
     t.index ["parish_id"], name: "index_farmers_on_parish_id"
     t.index ["village_id"], name: "index_farmers_on_village_id"
   end
