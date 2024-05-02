@@ -129,97 +129,40 @@
 
 
 <h4 class="display-6 mt-3">Animals</h4>
-<div class="row">
-    <div class="col-md-3">
-      <strong>Animal Type:</strong>
-      <%= farmer.animal %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Number:</strong>
-      <%= farmer.animal_total %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Organic (Hai):</strong>
-      <%= farmer.animal_organic %>
-    </div>
-   
-    <div class="col-md-3">
-      <strong>Organic:</strong>
-      <%= farmer.animal_comment %>
-    </div>
-</div>
-<hr />
 
-<div class="row">
-    <div class="col-md-3">
-      <strong>Animal Type:</strong>
-      <%= farmer.animal2 %>
-    </div>
+<table class="table table-striped">
+  <thead>
+    <th>Animal Type</th>
+    <th>Number </th>
+    <th>Organic (Hai)</th>
+    <th>Comment</th>
+  </thead>
+   <tr>
+    <td><%= farmer.animal %></td>
+    <td><%= farmer.animal_total %></td>
+    <td><%= farmer.animal_organic %></td>
+    <td><%= farmer.animal_comment %></td>
+  </tr>
+  <tr>
+    <td><%= farmer.animal2 %></td>
+    <td><%= farmer.animal_total2 %></td>
+    <td><%= farmer.animal_organic2 %></td>
+    <td><%= farmer.animal_comment2 %></td>
+  </tr>
   
-    <div class="col-md-3">
-      <strong>Number:</strong>
-      <%= farmer.animal_total2 %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Organic (Hai):</strong>
-      <%= farmer.animal_organic2 %>
-    </div>
-   
-    <div class="col-md-3">
-      <strong>Organic:</strong>
-      <%= farmer.animal_comment2 %>
-    </div>
-</div>
-<hr />
+    <td><%= farmer.animal_animal3 %></td>
+    <td><%= farmer.animal_total3 %></td>
+    <td><%= farmer.animal_organic3 %></td>
+    <td><%= farmer.animal_comment3 %></td>
+  </tr>
+  <tr>
+    <td><%= farmer.animal_animal4 %></td>
+    <td><%= farmer.animal_total4 %></td>
+    <td><%= farmer.animal_organic4 %></td>
+    <td><%= farmer.animal_comment4 %></td>
+  </tr>
 
-<div class="row">
-    <div class="col-md-3">
-      <strong>Animal Type:</strong>
-      <%= farmer.animal_animal3 %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Number:</strong>
-      <%= farmer.animal_total3 %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Organic (Hai):</strong>
-      <%= farmer.animal_organic3 %>
-    </div>
-   
-    <div class="col-md-3">
-      <strong>Organic:</strong>
-      <%= farmer.animal_comment3 %>
-    </div>
-</div>
-<hr />
 
-<div class="row">
-    <div class="col-md-3">
-      <strong>Animal Type:</strong>
-      <%= farmer.animal_animal4 %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Number:</strong>
-      <%= farmer.animal_total4 %>
-    </div>
-  
-    <div class="col-md-3">
-      <strong>Organic (Hai):</strong>
-      <%= farmer.animal_organic4 %>
-    </div>
-   
-    <div class="col-md-3">
-      <strong>Organic:</strong>
-      <%= farmer.animal_comment4 %>
-    </div>
-</div>
-<hr />
-
+  </table>
 
 </div>
