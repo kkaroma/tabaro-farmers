@@ -50,7 +50,7 @@
   </div>
    <div class="col-md-4">
     <div class="form-group">
-      <%= f.input :crop, input_html: { class: 'form-control' }, label: "Crop" %>
+      <%= f.select :id, Crop.all.collect { |p| [ p.name, p.id ] }, input_html: { class: 'form-control' }, label: "Crop", include_blank: true  %>
     </div>
   </div>
    <div class="col-md-4">
