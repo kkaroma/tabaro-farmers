@@ -17,8 +17,9 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total Farmers</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">316</div>
+                                                Total Farmers
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><%= Farmer.all.count %></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -36,7 +37,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Villages</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">30</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><%= Village.count %></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -56,7 +57,7 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">51</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><%= Parish.count %></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
