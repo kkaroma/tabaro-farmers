@@ -130,7 +130,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_01_064113) do
     t.integer "animal_animal4"
     t.integer "animal_total4"
     t.boolean "animal_organic4"
-    t.text "animal_comment4"
+    t.text "comment4"
     t.index ["parish_id"], name: "index_farmers_on_parish_id"
     t.index ["village_id"], name: "index_farmers_on_village_id"
   end
