@@ -83,8 +83,18 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Fields</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">118</div>
+                                                Acres</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                    <% all_fields = 0 %>
+                                                    <% Farmer.all.each do | farm | %>
+                                                        <% all_fields += farm.acre.to_i %>
+                                                         <% all_fields += farm.acre2.to_i %>
+                                                         <% all_fields += farm.acre3.to_i %>
+                                                    <% end %>
+                                                    <%= all_fields %>
+
+
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
