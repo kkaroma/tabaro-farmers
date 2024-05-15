@@ -13,6 +13,7 @@ class FarmersController < ApplicationController
   # GET /farmers/new
   def new
     @farmer = Farmer.new
+   
   end
 
   # GET /farmers/1/edit
